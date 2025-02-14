@@ -48,7 +48,7 @@ async def get_book_by_id(book_id: int) -> Optional[Book]:
     Returns:
         Book if found.
     Raises:
-        HTTPException (404): If book not found.
+        HTTPException (404): If book not found..
     """
     found_book = db.get_book(book_id)
     if not found_book:
